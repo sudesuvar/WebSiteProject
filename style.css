@@ -15,8 +15,9 @@ body{
 #logo{
     font-size: 30px;
     line-height: 80px;
-    color: cadetblue;
+    color: #000;
     float: left;
+    font-weight: bold;
 }
 nav{
     float: right;
@@ -25,13 +26,13 @@ nav{
 nav a:link{
     text-decoration: none;
     margin-right: 25px;
-    color: cadetblue;
+    color: #000;
 }
 nav a:hover{
-    border-bottom: 2px solid cadetblue;
+    border-bottom: 2px solid #000;
 }
 nav a:visited{
-    border-bottom: 2px solid cadetblue;
+    border-bottom: 2px solid #000;
 }
 .icon{
     margin-right: 7px;
@@ -41,6 +42,86 @@ nav a:visited{
 
 /* Banner start */
 #banner{
-    background-image: url(img/software.jpg);
+    position: relative;
+    background-image: url(img/software1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     height: 600px;
+}
+#content{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+#banner h2{
+border-bottom: 1px solid white;
+width: 150px;
+}
+/* Banner end */
+
+/* AboutUs start */
+
+#aboutUs{ 
+    padding: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#aboutUs h3{
+    font-size:55px;
+    color: #000;
+    text-shadow: 0px 1px black;
+    font-weight: bold;
+}
+#container{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+#leftPanel{
+    float: left;
+    border-right: 2px solid #000;
+    font-size: 30px;
+    width: 400px;
+    color: #000;
+}
+#h4left{
+    line-height: 1.6;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+#h4left, #rightPanel{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+#rightPanel{
+    float: right;
+    width: 750px;
+    color: #000;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: bold;
+}
+.img-fluid{
+    max-width:100%;
+    height: auto;
+}
+.mt100{
+    margin-top: 100px;
+}
+#pEnd{
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 30px;
 }
