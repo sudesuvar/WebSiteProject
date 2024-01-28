@@ -5,6 +5,7 @@
 body{
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
+    background-color: #DCE0E0;
 }
 
 /* Menu start */
@@ -15,9 +16,10 @@ body{
 #logo{
     font-size: 30px;
     line-height: 80px;
-    color: #000;
+    color: #44878B;
     float: left;
     font-weight: bold;
+    cursor: pointer;
 }
 nav{
     float: right;
@@ -26,13 +28,15 @@ nav{
 nav a:link{
     text-decoration: none;
     margin-right: 25px;
-    color: #000;
+    color: #44878B;
 }
 nav a:hover{
-    border-bottom: 2px solid #000;
+    color: #A1775C;
+    border-bottom: 2px solid #A1775C;
 }
 nav a:visited{
-    border-bottom: 2px solid #000;
+    color: #A1775C;
+    border-bottom: 2px solid #A1775C;
 }
 .icon{
     margin-right: 7px;
@@ -74,11 +78,11 @@ width: 150px;
 }
 #aboutUs h3{
     font-size:55px;
-    color: #000;
-    text-shadow: 0px 1px black;
+    color: #44878B;
+    text-shadow: 0px 1px #44878B;
     font-weight: bold;
 }
-#container{
+.container{
     width: 1200px;
     height: auto;
     margin: auto;
@@ -124,4 +128,39 @@ width: 150px;
     font-size: 15px;
     line-height: 1.8;
     margin-top: 30px;
+}
+/* Aboutus end */
+
+/* Educations Start*/
+
+#educations{
+    padding: 50px;
+    text-align: center;
+    height: 700px;
+}
+#educations h3{
+    font-size:55px;
+    color: #44878B;
+    text-shadow: 0px 1px #44878B;
+    font-weight: bold;
+}
+.card{
+    width: 320px;
+    height: 350px;
+    border: 1px solid #A1775C;
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+.card:hover{
+    border: 2px solid #61391F;
+}
+.titleCard{
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+.cardp{
+    color: #000;
+    font-weight: bold;
 }
