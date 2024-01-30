@@ -212,3 +212,78 @@ width: 150px;
     float: left;
     padding: 40px;
 }
+/* Team end */
+
+/* communation start */
+#communication{
+    background-color: #44878B;
+    background-size: cover;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+
+}
+#communication h3{
+    font-size:55px;
+    color: #DCE0E0;
+    text-shadow: 0px 1px #44878B;
+    font-weight: bold;
+}
+#opaque{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    height: 550px;
+}
+#formGroup{
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+#leftForm{
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+}
+#rightForm{
+    width: 50%;
+    float: right;
+    padding-left: 10px;
+}
+.form-control{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #61391F;
+}
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    border: 2px solid #61391F;
+    border-radius: 5px;
+}
+.inputBtn{
+margin-left: 10px;
+margin-top: 10px;
+}
+#address{
+    width: 450px;
+    float: right;
+    padding: 30px;
+    height: 500px;
+    text-align: left;
+    text-align: center;
+    font-weight: bold;
+    
+}
