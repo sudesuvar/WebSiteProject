@@ -123,6 +123,7 @@
     <section id="communication">
         <div class="container">
             <h3 >İLETİŞİM</h3>
+            <form action="index.php" method="post">
             <div id="opaque">
                 <div id="formGroup">
                    <div id="leftForm">
@@ -133,7 +134,7 @@
                     <input class="form-control" type="text" name="mail" placeholder="E-mail">
                     <input class="form-control" type="text" name="title" placeholder="Konu Başlığı">
                    </div>
-                   <textarea name="Mesaj" class="form-control" cols="30" rows="10" placeholder="Mesajınız"></textarea>
+                   <textarea name="Message" class="form-control" cols="30" rows="10" placeholder="Mesajınız"></textarea>
                    <input type="submit" name="" value="Gönder"  class="inputBtn" >
                 </div>
                 <div id="address">
@@ -145,6 +146,7 @@
                         <p>sudesuvar51@gmail.com</p>
                 </div>
             </div>
+            </form>
             <footer>
                 <div id="copyRight">Tüm Hakları saklıdır.</div>
                 <div id="socialFooter">
@@ -168,3 +170,22 @@
 </body>
 
 </html>
+
+
+<?php
+include("connection.php");
+if(isset($_POST["name"], $_POST["telephone"],  $_POST["mail"], $_POST["title"], $_POST["Message"])){
+    $nameSurname=$_POST["name"];
+    $telephone=$_POST["telephone"];
+    $email= $_POST["mail"];
+    $title=$_POST["title"];
+    $message=$_POST["Message"];
+    
+    $add="INSERT INTO communication(nameSurname, telephone, email, title, message) VALUES ('".$nameSurname."','".$telephone."','".$email."','".$title."','". $message."')";
+
+    if($connect ->query($add)===TRUE){
+        //echo "<script>alert('Mesajınız gönderilmişstir.')</script>";
+        echo "mesajınız gönderildi.";
+    }
+}
+?>
